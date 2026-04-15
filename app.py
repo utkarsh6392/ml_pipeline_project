@@ -19,16 +19,47 @@ st.set_page_config(page_title="HealthAI Pro", page_icon="🔮", layout="wide", i
 # Advanced CSS for a glass-morphism feel and clean UI
 st.markdown("""
     <style>
-    .main-title { font-size: 3.5rem; background: -webkit-linear-gradient(#4A90E2, #50E3C2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-weight: 800; margin-bottom: 0px;}
-    .sub-title { font-size: 1.2rem; color: #a3a8b8; text-align: center; margin-bottom: 40px;}
+    /* Main Title Styling */
+    .main-title { 
+        font-size: 4rem !important; 
+        background: -webkit-linear-gradient(#4A90E2, #50E3C2); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        text-align: center; 
+        font-weight: 800; 
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+    
+    /* Sub Title Styling */
+    .sub-title { 
+        font-size: 1.5rem !important; 
+        color: #a3a8b8; 
+        text-align: center; 
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    
+    /* Metrics and Buttons */
     div[data-testid="stMetricValue"] { font-size: 2rem; color: #4A90E2; }
-    .stButton>button { background-image: linear-gradient(to right, #4A90E2, #50E3C2); color: white; border-radius: 8px; border: none; transition: 0.3s; width: 100%; font-weight: bold;}
-    .stButton>button:hover { transform: translateY(-2px); box-shadow: 0px 5px 15px rgba(74, 144, 226, 0.4); }
+    .stButton>button { 
+        background-image: linear-gradient(to right, #4A90E2, #50E3C2); 
+        color: white; 
+        border-radius: 8px; 
+        border: none; 
+        transition: 0.3s; 
+        width: 100%; 
+        font-weight: bold;
+    }
+    .stButton>button:hover { 
+        transform: translateY(-2px); 
+        box-shadow: 0px 5px 15px rgba(74, 144, 226, 0.4); 
+    }
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="main-title">HealthAI Predictive Engine</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">Interactive Diagnostic Analytics for Diabetes, Heart Disease & Parkinsons</p>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">HealthAI Predictive Engine</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-title">Interactive Diagnostic Analytics for Diabetes, Heart Disease & Parkinsons</div>', unsafe_allow_html=True)
 
 # ==========================================
 # 2. SIDEBAR & DATA LOADING
